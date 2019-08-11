@@ -1,0 +1,16 @@
+[
+    {
+        "title": "My project",
+        "slug": "project-1",
+        "url": "https://example.com/",
+        "image": "./1_500.jpg",
+        "description": "Learn and learn and learn as much as you can"
+    },
+    {
+        "title": "Another project",
+        "slug": "project-2",
+        "url": "https://example.com/",
+        "image": "./500.jpg",
+        "description": "This one is probably as blue as the previous"
+    }
+]

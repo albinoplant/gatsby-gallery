@@ -1,3 +1,6 @@
 import React from "react"
+import Home from "./home"
 
-export default () => <div>Hello world!</div>
+import("./style.scss")
+
+export default () => <Home/>
