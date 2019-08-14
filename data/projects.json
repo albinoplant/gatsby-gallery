@@ -12,5 +12,20 @@
         "url": "https://example.com/",
         "image": "./500.jpg",
         "description": "This one is probably as blue as the previous"
+    },
+    {
+        "title": "Third photo",
+        "slug": "project-3",
+        "url": "https://example.com/",
+        "image": "./501.jpg",
+        "description": "It's more horizontal... Will that be a problem?"
+    },
+    {
+        "title": "Whoo 4th",
+        "slug": "project-4",
+        "url": "https://example.com/",
+        "image": "./502.jpg",
+        "description": "I don't know if I like that photo"
     }
+
 ]

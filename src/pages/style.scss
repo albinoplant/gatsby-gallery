@@ -1,33 +1,94 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-$brake-small:320px;
-$brake-large:1200px;
+$brake-small:520px;
+$brake-large:1000px;
+$main-color:rgb(60, 47, 77);
+$main-color-light:rgb(192, 180, 197);
+$secondary-color: rgb(114, 114, 114);
+$font-black: rgb(41, 41, 41);
 
 body{
+    //background-color:$main-color-light;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    width:100%;
+    width:100vw;
     margin:0;
+    padding: 0;
+    a{
+        text-decoration: none;
+    }
     header{
-        padding-top:0.7em;
-        padding-bottom: 0.8em;
-        width: 100%;
-        background-color: rgb(47, 221, 178);
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index: 999;
+        a{
+            color:#fff;
+        }
+        font-size: 2em;
+        font-weight: 600;
+        padding-top:0.2em;
+        padding-bottom: 0.3em;
+        background-color:$main-color;
         @media screen and (min-width: $brake-large) {
             text-align: left;
-            padding-left: 1em;                     
-        }
-        .link{
-            text-decoration: none;
-            color: white;
-            font-size: 2em;
-            font-weight: 600;
+            padding-left:1em;                     
         }
     }
     .content{
-        padding: 2em 0 2em 0;
-        div{
-            width:100%;
-            font-size:1.5em;
+        margin-top:5rem;
+        display:grid;
+        max-width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        @media screen and (min-width: $brake-large) {
+            display:inline-block;
+            column-count:4;
+            //padding-top:5em;
+        } 
+        @media screen and (max-width: $brake-small) {
+            display: inline-block;
+            //width:100%;
+            margin-left:5%;
+            margin-right:5%;
+        }  
+        .container{
+            background-color:white;
+            @media screen and (min-width: $brake-large) {
+                //width:100% !important;
+                //height: auto !important;
+                page-break-inside: avoid;
+            }
+            margin:20px;
+            //flex-flow: column;
+            //justify-content: space-between;
+            color: $font-black;
+            font-size: 0.5rem;
+            .preview-text{
+                p{
+                    button{
+                        width:100%;
+                    }
+                    color:$secondary-color;
+                    a{
+                        color:$secondary-color;
+                    }
+                }
+                
+            }
+            a{  
+                color:$font-black;
+            }
+        
         }
+    }
+    button{
+        background-color: rgba(255,255,255,0);
+        font-weight:600;
+        text-shadow: 0px 0px 0.2rem $main-color;
+        color:rgb(255, 255, 255);
+        border: none;
+
     }
 }
