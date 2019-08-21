@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
+import Header from './header'
+import Main from './main'
 
 const Layout = ({ children }) => (
   <React.Fragment>
-    <header className="header">
-      <Link to="/">My Portfolio</Link>
-    </header>
-    <main className="content">{children}</main>
+    <Header/>
+    <Main>{children}</Main>
   </React.Fragment>
 );
 

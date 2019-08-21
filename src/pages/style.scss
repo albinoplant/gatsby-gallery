@@ -16,26 +16,9 @@ body{
     a{
         text-decoration: none;
     }
-    header{
-        position: fixed;
-        top:0;
-        left:0;
-        width:100%;
-        z-index: 999;
-        a{
-            color:#fff;
-        }
-        font-size: 2em;
-        font-weight: 600;
-        padding-top:0.2em;
-        padding-bottom: 0.3em;
-        background-color:$main-color;
-        @media screen and (min-width: $brake-large) {
-            text-align: left;
-            padding-left:1em;                     
-        }
-    }
-    .content{
+   
+    
+   /* .content{
         margin-top:5rem;
         display:grid;
         max-width:80%;
@@ -52,12 +35,12 @@ body{
             //width:100%;
             margin-left:5%;
             margin-right:5%;
-        }  
+        }
         .container{
             background-color:white;
             @media screen and (min-width: $brake-large) {
-                //width:100% !important;
-                //height: auto !important;
+                width:100% !important;
+                height: auto !important;
                 page-break-inside: avoid;
             }
             margin:20px;
@@ -90,5 +73,9 @@ body{
         color:rgb(255, 255, 255);
         border: none;
 
-    }
+    }*/
 }
+
+#zoom{
+    transform: scale(1.1) translateY(1em);
+}  

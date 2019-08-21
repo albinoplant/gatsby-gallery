@@ -30,10 +30,10 @@ const ProjectTemplate = ({ data }) => {
   return (
     <Layout>
       <Project
-        title={title}
-        description={description}
-        imageData={imageData}
-        url={url}
+      title={title}
+      description={description}
+      url={url}
+      imageData={imageData}
       />
     </Layout>
   );
