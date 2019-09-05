@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../../components/layout';
 import ProjectPreview from '../../components/project-preview';
+import Hello from '../../components/hello'
 
 const Home = () => {
   const data = useStaticQuery(graphql`
@@ -27,6 +28,8 @@ const Home = () => {
   const projects = data.allProjectsJson.edges;
 
   return (
+    <div>
+    <Hello/>
     <Layout>
       {projects.map(({ node: project }) => {
         const title = project.title;
@@ -44,6 +47,7 @@ const Home = () => {
         );
       })}
     </Layout>
+    </div>
   );
 };
 

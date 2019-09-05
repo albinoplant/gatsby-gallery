@@ -1,81 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-$brake-small:520px;
-$brake-large:1000px;
-$main-color:rgb(60, 47, 77);
-$main-color-light:rgb(192, 180, 197);
-$secondary-color: rgb(114, 114, 114);
-$font-black: rgb(41, 41, 41);
+
 
 body{
-    //background-color:$main-color-light;
+    background-color:lightgray;
+    margin:0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    width:100vw;
-    margin:0;
-    padding: 0;
+    
     a{
         text-decoration: none;
     }
-   
-    
-   /* .content{
-        margin-top:5rem;
-        display:grid;
-        max-width:80%;
-        margin-left: 10%;
-        margin-right: 10%;
-
-        @media screen and (min-width: $brake-large) {
-            display:inline-block;
-            column-count:4;
-            //padding-top:5em;
-        } 
-        @media screen and (max-width: $brake-small) {
-            display: inline-block;
-            //width:100%;
-            margin-left:5%;
-            margin-right:5%;
-        }
-        .container{
-            background-color:white;
-            @media screen and (min-width: $brake-large) {
-                width:100% !important;
-                height: auto !important;
-                page-break-inside: avoid;
-            }
-            margin:20px;
-            //flex-flow: column;
-            //justify-content: space-between;
-            color: $font-black;
-            font-size: 0.5rem;
-            .preview-text{
-                p{
-                    button{
-                        width:100%;
-                    }
-                    color:$secondary-color;
-                    a{
-                        color:$secondary-color;
-                    }
-                }
-                
-            }
-            a{  
-                color:$font-black;
-            }
-        
-        }
-    }
-    button{
-        background-color: rgba(255,255,255,0);
-        font-weight:600;
-        text-shadow: 0px 0px 0.2rem $main-color;
-        color:rgb(255, 255, 255);
-        border: none;
-
-    }*/
-}
-
-#zoom{
-    transform: scale(1.1) translateY(1em);
 }  
