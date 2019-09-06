@@ -2,8 +2,8 @@ import React from 'react';
 import styled, {keyframes} from 'styled-components';
 
 import Hand from '../data/svg/hand.js';
-import color from './color';
-import device from './device';
+import color from '../data/info/color';
+import device from '../data/info/device';
 
 const intro = keyframes`
     0% {
@@ -73,10 +73,10 @@ const Container = styled.div`
     }
 `;
 
-const Hello = () => (  
+const Hello = (props) => (  
         <Container>
             <h1>Welcome to my portfolio site!</h1>
-            <Hand/>
+            <Hand wave={props.scrollPos/*i co tu zrobić, jak przekazać tego propsa do stylu? */}/>
         </Container>
 
 );

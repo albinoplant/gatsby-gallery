@@ -4,7 +4,8 @@ import Layout from '../../components/layout';
 import ProjectPreview from '../../components/project-preview';
 import Hello from '../../components/hello'
 
-const Home = () => {
+const Home = (props) => {
+
   const data = useStaticQuery(graphql`
     {
       allProjectsJson {
@@ -29,8 +30,8 @@ const Home = () => {
 
   return (
     <div>
-    <Hello/>
-    <Layout>
+    <Hello scrollPos ={props.scrollPos}/>
+    <Layout visable ={props.visable}>
       {projects.map(({ node: project }) => {
         const title = project.title;
         const description = project.description;

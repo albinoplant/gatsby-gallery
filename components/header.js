@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Button from './button';
-import device from './device';
-import color from './color';
-import window from 'global';
+import device from '../data/info/device';
+import color from '../data/info/color';
+
 
 const StyledHeader = styled.header`
 top: 0;
@@ -46,49 +46,16 @@ const StyledLink = styled(Link)`
     }
 `;
 
-export default class Header extends Component {
-
-    constructor(props){
-        super(props);
-        
-        this.state = {
-            prevScrollPos: window.pageYOffset,
-            visable: true,
-        };
-    } 
-    componentDidMount() {
-        window.addEventListener("scroll", this.handleScroll);
-      }
-    
-      componentWillUnmount() {
-        window.removeEventListener("scroll", this.handleScroll);
-      }
-    handleScroll = () => {
-        const { prevScrollPos } = this.state;
-        
-        const currentScrollPos = window.pageYOffset;
-
-        const visable = (currentScrollPos===0)?true:(prevScrollPos >= currentScrollPos);
-
-        this.setState({
-            prevScrollPos: currentScrollPos,
-            visable,
-        });
-
-    };
-    render(){
-        console.log(this.state.visable);
-        return (
+const Header = (props) =>(
                 <StyledHeader>
-                    <Background visable={this.state.visable}>
+                    <Background visable={props.visable}>
                         <StyledLink to="/">Site</StyledLink>
                             <div>
-                                <Button><Link>Contact</Link></Button>
-                                <Button><Link>About Me</Link></Button>
+                                <Button>Contact</Button>
+                                <Button>About Me</Button>
                             </div>
                     </Background>
                 </StyledHeader>
 
         );
-    }
-};
+export default Header
