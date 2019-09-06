@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Button from './button';
 import device from './device';
 import color from './color';
+import window from 'global';
 
 const StyledHeader = styled.header`
 top: 0;
