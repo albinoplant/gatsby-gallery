@@ -16,16 +16,9 @@ display:block;
 margin:auto;
 transition: 0.1s all ease-in;
 padding: 0.5em;
-.preview-title{
-  color:rgba(0,0,0,0.5);
-  
-}
-  &:hover{
-    
-  }
-  min-width:250px;
-  p{
-    color:gray;
+
+p{
+  color:gray;
   }
 `;
 
