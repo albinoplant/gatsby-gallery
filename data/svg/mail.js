@@ -2,7 +2,7 @@ import React from 'react';
 import color from '../info/color'
 
 const Mail = () => (
-    <svg style={{margin:"1rem"}}  xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 -2 602 602" width="80px" height="80px" id="svg2" version="1.1">
+    <svg style={{margin:"1rem"}}  xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 -2 602 602" width="4rem" height="4rem" id="svg2" version="1.1">
         <g id="layer1" transform="translate(0,-450.36218)">
             <g id="g3062" transform="matrix(6.6666666,0,0,6.6666666,-5.6668106,-5957.7191)">
             <path  style={{fill:"white",fillOpacity:1,fillRule:"nonzero",stroke:"none",strokeWidth:0.1,marker:"none",visibility:"visible",display:"inline",overflow:"visible"}} d="m 21.652659,961.36222 48.694734,0 c 11.441552,0 20.652633,9.21108 20.652633,20.65264 l 0,48.69474 c 0,11.4416 -9.211081,20.6526 -20.652633,20.6526 l -48.694734,0 c -11.441563,0 -20.6526336,-9.211 -20.6526336,-20.6526 l 0,-48.69474 c 0,-11.44156 9.2110706,-20.65264 20.6526336,-20.65264 z" id="rect2996"/>

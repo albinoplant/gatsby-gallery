@@ -11,10 +11,12 @@ import Instagram from '../data/svg/instagram';
 const PopUpWindow = (props) => (
     <StyledWrapper>
         <Button onClick={()=> props.setOn(!props.isOn)}  id="exit">Close</Button> 
-        <div id="container">         
+        <div id="container">     
             <div>
                 <Instagram /><Button>Chceck my Instagram</Button>
                 <Mail /><Button>Send me an email</Button>
+                <Button onClick={()=> props.setOn(!props.isOn)} id="exit2">Close</Button> 
+
             </div>
         </div>
 
@@ -55,6 +57,26 @@ const Header = (props) => {
 }
 
 const StyledWrapper = styled.div`
+    @media (max-width:767px) {
+        #exit{
+            display:none;
+        }
+        #exit2{
+            margin-top:2rem;
+            color:white;
+            background-color:transparent;
+        }
+        #container{
+            width:100%;
+            height:100%;
+        }
+        
+    }
+    @media ${device.tablet}{
+        #exit2{
+            display:none;
+        }
+    }
     #exit{
         background-color:transparent;
         color:white;
