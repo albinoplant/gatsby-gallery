@@ -5,22 +5,6 @@ import styled from 'styled-components';
 import Button from './button';
 //import color from './color';
 
-const StyledLink = styled(Link)`
-color: black;
-`;
-
-
-const StyledDiv = styled.div`
-border-radius:7px;
-display:block;
-margin:auto;
-transition: 0.1s all ease-in;
-padding: 0.5em;
-
-p{
-  color:gray;
-  }
-`;
 
 const ProjectPreview = ({ title, description, slug, imageData }) => {
 
@@ -36,11 +20,29 @@ const ProjectPreview = ({ title, description, slug, imageData }) => {
             {description}
           </p>
           <p >
-            <StyledLink to={`/${slug}/`}><Button>View this project &rarr;</Button></StyledLink>
+          <Button><StyledLink style={{color:"gray"}} to={`/${slug}/`}>View this project &rarr;</StyledLink></Button>
           </p>
         </div>
       </StyledDiv>
         
   );
 }
+
+const StyledLink = styled(Link)`
+  color:black;
+`;
+
+
+const StyledDiv = styled.div`
+border-radius:7px;
+display:block;
+margin:auto;
+transition: 0.1s all ease-in;
+padding: 0.5em;
+
+p{
+  color:gray;
+  }
+`;
+
 export default ProjectPreview;

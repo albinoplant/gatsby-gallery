@@ -6,6 +6,7 @@ import Hello from '../../components/hello'
 
 const Home = (props) => {
 
+
   const data = useStaticQuery(graphql`
     {
       allProjectsJson {
@@ -31,7 +32,7 @@ const Home = (props) => {
   return (
     <div>
     <Hello scrollPos ={props.scrollPos}/>
-    <Layout visable ={props.visable}>
+    <Layout displayGrid={true}>
       {projects.map(({ node: project }) => {
         const title = project.title;
         const description = project.description;
