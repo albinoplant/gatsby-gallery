@@ -14,6 +14,7 @@ const StyledMain = styled.main`
 
     display: ${props => props.displayGrid ? 
     "grid" : "flex"};
+    justify-content:center;
     max-height: ${props => props.maxHeight ? "85vh":""} !important;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     background-color:white;

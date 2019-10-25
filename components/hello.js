@@ -75,7 +75,7 @@ const Container = styled.div`
 
 const Hello = (props) => (  
         <Container>
-            <h1>Welcome to my portfolio site!</h1>
+            <h1>Welcome to my site!</h1>
             <Hand wave={props.scrollPos/*i co tu zrobić, jak przekazać tego propsa do stylu? */}/>
         </Container>
 

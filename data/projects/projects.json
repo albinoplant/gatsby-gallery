@@ -4,7 +4,7 @@
         "slug": "project-1",
         "url": "https://example.com/",
         "image": "./499.jpg",
-        "description": "Learn and learn and learn as much as you can",
+        "description": "Lorem ipsum dolor sit amet, consectetur",
         "orgin": "https://jamiebatres.co.vu/post/186553011220"
     },
     {
@@ -12,7 +12,7 @@
         "slug": "project-2",
         "url": "https://example.com/",
         "image": "./500.jpg",
-        "description": "This one is probably as blue as the previous",
+        "description": "Lorem ipsum dolor sit amet, consectetur",
         "orgin": "https://timbllr.nl/post/173285609512/timbllr-via-weheartit"
     },
     {
@@ -20,31 +20,31 @@
         "slug": "project-3",
         "url": "https://example.com/",
         "image": "./501.jpg",
-        "description": "It's more horizontal... Will that be a problem?",
+        "description": "Lorem ipsum dolor sit amet, consectetur",
         "orgin": ""
     },
     {
-        "title": "Whoo 4th",
+        "title": "4th project",
         "slug": "project-4",
         "url": "https://example.com/",
         "image": "./502.jpg",
-        "description": "I don't know if I like that photo",
+        "description": "Lorem ipsum dolor sit amet, consectetur",
         "orgin": ""
     },
     {
-        "title": "Whoo 5th",
+        "title": "5th one",
         "slug": "project-5",
         "url": "https://example.com/",
         "image": "./503.jpg",
-        "description": "I'm hungry and that looks tasty",
+        "description": "Lorem ipsum dolor sit amet, consectetur",
         "orgin": ""
     },
     {
-        "title": "Whoo 6th",
+        "title": "6th",
         "slug": "project-6",
         "url": "https://example.com/",
         "image": "./504.jpg",
-        "description": "I'm hungry and that looks tasty",
+        "description": "Lorem ipsum dolor sit amet, consectetur",
         "orgin": ""
     }
 ]

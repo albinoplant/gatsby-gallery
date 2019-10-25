@@ -64,7 +64,7 @@ const StyledWrapper = styled.div`
         #exit2{
             margin-top:2rem;
             color:white;
-            background-color:transparent;
+            background-color:${color.mainColor};
         }
         #container{
             width:100%;
@@ -78,7 +78,7 @@ const StyledWrapper = styled.div`
         }
     }
     #exit{
-        background-color:transparent;
+        background-color:${color.mainColor};
         color:white;
         margin:0.5rem;
         align-self:auto;
@@ -133,6 +133,7 @@ const StyledWrapper = styled.div`
 const StyledHeader = styled.header`
     Button{
         color:white;
+        
     }
     top: 0;
     left: 0;

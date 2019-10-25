@@ -20,6 +20,7 @@ const Project = ({ title, description, url, imageData }) => (
 );
 
 const StyledWrapper = styled.div`
+  
 `; 
 
 export default Project;
